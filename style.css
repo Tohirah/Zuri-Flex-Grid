@@ -1,60 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-background-color: hsl(0, 0%, 95%);
+body {
+  background-color: hsl(0, 0%, 95%);
 }
-main{
-    width: 70%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.grid {
+  border: 2px solid;
+  margin: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(31, 77%, 52%),
+    hsl(184, 100%, 22%),
+    hsl(31, 77%, 52%),
+    hsl(179, 100%, 13%)
+  );
+  
 }
-main div{
-    padding: 45px;
-    text-align: left;
-    line-height: 2;
+.grid a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
 }
-.right-container{
-background-color: hsl(31, 77%, 52%);
-border-top-left-radius: 5px;
-border-bottom-left-radius: 5px;
+main {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.middle-container{
-background-color: hsl(184, 100%, 22%);
+main div {
+  padding: 45px;
+  text-align: left;
+  line-height: 2;
 }
-.left-container{
-background-color: hsl(179, 100%, 13%);
-border-top-right-radius: 5px;
-border-bottom-right-radius: 5px;
+.right-container {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
-h1{
-    font-family: 'Big Shoulders Display', cursive;
-    color: hsl(0, 0%, 95%);
-    margin: 15px 0 15px;
+.middle-container {
+  background-color: hsl(184, 100%, 22%);
 }
-p{
-    font-family: 'Lexend deca', sans-serif;
-    color: hsla(0, 0%, 100%, 0.75);
+.left-container {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-button{
-    width: 135px;
-    height: 35px;
-    border-radius: 40px;
-    border-style: none;
-    margin-top: 75px;
-    background-color: hsl(0, 0%, 95%);
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  margin: 15px 0 15px;
 }
-.right-container button{
-    color: hsl(31, 77%, 52%);
+p {
+  font-family: "Lexend deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
 }
-.middle-container button{
-    color: hsl(184, 100%, 22%);
+button {
+  width: 135px;
+  height: 35px;
+  border-radius: 40px;
+  border-style: none;
+  margin-top: 75px;
+  background-color: hsl(0, 0%, 95%);
 }
-.left-container button{
-    color: hsl(179, 100%, 13%);
+.right-container button {
+  color: hsl(31, 77%, 52%);
+}
+.middle-container button {
+  color: hsl(184, 100%, 22%);
+}
+.left-container button {
+  color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 375px) {
+  main {
+    display: block;
+  }
 }
